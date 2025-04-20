@@ -12,7 +12,7 @@
 </head>
 <body class="portfolio-body">
     <header class="portfolio-header">
-        <a href="index.html"><img src="images/amoghjoshi-logo.png" alt="Amogh Joshi Netflix-Logo" class="netflix-logo"></a>
+        <a href="index.html"><img src="images/index/amoghjoshi-logo.png" alt="Amogh Joshi Netflix-Logo" class="netflix-logo"></a>
         <nav class="portfolio-nav">
             <ul>
                 <li><a href="#highlights">Highlights</a></li>
@@ -26,7 +26,7 @@
 
     <main class="portfolio-main">
         <!-- Hero focused on value proposition - ADD YOUR BACKGROUND GIF PATH HERE -->
-        <section class="hero-section" style="background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHY3NGQ4ZXpqdmQydmt4Y2EwbjhhODBqMHF3anBid2x3engzaWY3biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LUBzYKw70EospZLBmU/giphy.gif'), url('images/tony-stark.gif');">
+        <section class="hero-section" style="background-image: url('images/tony-stark.gif');">
             <div class="hero-content">
                 <h1>Amogh Joshi: Product Manager Delivering Business Impact</h1>
                 <p>Driven Product Manager with experience across B2C/B2B SaaS (EdTech, FinTech, Quantum Computing). Duke Engineering Management graduate with a B.Tech in Computer Engineering, skilled in strategy, execution, and delivering measurable results like +40% DAU & +24% Acquisition Growth.</p>
@@ -40,13 +40,15 @@
             <h2>Quantifiable Results & Highlights</h2>
             <div class="item-grid">
                 <!-- Kurated AI DAU -->
-                <div class="item-card">
-                    <img src="images/highlight-dau.jpg" alt="DAU Growth">
-                    <div class="item-card-content">
-                        <h3>+40% Daily Active Users</h3>
-                        <p>Spearheaded AI product development and API integration at Kurated AI, significantly increasing user engagement on the website.</p>
+                <a href="experience-kurated.html">
+                    <div class="item-card">
+                        <img src="images/recruiter/highlight-dau.png" alt="DAU Growth">
+                        <div class="item-card-content">
+                            <h3>+40% Daily Active Users</h3>
+                            <p>Spearheaded AI product development and API integration at Kurated AI, significantly increasing user engagement on the website.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <!-- Kurated AI Conversion/CAC -->
                  <div class="item-card">
                     <img src="images/highlight-conversion.jpg" alt="Conversion Growth">
@@ -177,10 +179,10 @@
             "https://media.giphy.com/media/AYECTMLNS4o67dCoeY/giphy.gif?cid=790b7611s5vc42p4fer5m4d78ijqi606xs3zllsqujw5q0v4&ep=v1_gifs_search&rid=giphy.gif&ct=g", //Michael Scott weaknesses
             "https://media.giphy.com/media/Q5Fp8DviZhYDrEZw5H/giphy.gif?cid=790b76113spurcbp0h06funfzsj3ay2xixn9g35a1jk4rlax&ep=v1_gifs_search&rid=giphy.gif&ct=g" //Here's my Resume
           ];
-      
+
           // Randomly select an image URL from the array
           const randomImage = bgImages[Math.floor(Math.random() * bgImages.length)];
-      
+
           // Apply the selected image as the background image of the hero section
           const heroSection = document.querySelector('.hero-section');
           if (heroSection) {
@@ -195,14 +197,14 @@
             } else {
                 header.classList.remove('scrolled');
             }
-        }   
+        }
         // Check on scroll
         window.addEventListener('scroll', checkScroll);
         // Also check when the page loads (in case it's not at the top)
         window.addEventListener('load', checkScroll);
     </script>
-  
-      
+
+
 
 </body>
 </html>

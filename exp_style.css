@@ -1,0 +1,360 @@
+/* style.css */
+
+/* --- Global Resets & Base Styles --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #141414; /* Netflix dark background */
+    color: #e5e5e5; /* Light grey text for readability */
+    line-height: 1.4;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a {
+    color: #fff; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b3b3b3; /* Slightly dimmed hover color */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2 {
+    color: #fff; /* Pure white for main headings */
+    margin-bottom: 0.75em;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-bottom: 1px solid #333; /* Subtle separator */
+    padding-bottom: 0.4em;
+    margin-bottom: 1em;
+}
+
+/* --- Header --- */
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 4%; /* Padding relative to viewport width */
+    background-color: #080808; /* Slightly darker than body */
+    position: sticky; /* Keep header visible */
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1f1f1f; /* Subtle bottom border */
+}
+
+.netflix-logo {
+    height: 25px; /* Adjust as needed */
+    /* Placeholder uses text, actual image might need width/height */
+}
+
+.portfolio-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between nav items */
+}
+
+.portfolio-nav a {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* --- Hero Section --- */
+.detail-hero {
+    height: 75vh; /* Adjust height as needed */
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+    position: relative; /* For positioning overlay and content */
+    display: flex;
+    align-items: flex-end; /* Align content to bottom */
+    padding: 0 4%;
+}
+
+/* Dark overlay for text readability */
+.detail-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(20, 20, 20, 0.9) 10%, rgba(20, 20, 20, 0.4) 50%, rgba(20, 20, 20, 0.9) 100%);
+    z-index: 1;
+}
+
+.detail-hero-content {
+    position: relative; /* Position above the overlay */
+    z-index: 2;
+    max-width: 50%; /* Limit width of text block */
+    margin-bottom: 8%; /* Space from bottom */
+}
+
+.detail-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #e5e5e5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* --- CTA Buttons (Netflix Style) --- */
+.cta-button-netflix {
+    display: inline-block;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    text-align: center;
+}
+
+.cta-button-netflix.red {
+    background-color: #E50914; /* Netflix Red */
+    color: #fff;
+}
+
+.cta-button-netflix.red:hover {
+    background-color: #f40612; /* Slightly brighter red on hover */
+    color: #fff; /* Ensure text stays white */
+}
+
+/* Default grey button */
+.cta-button-netflix:not(.red) {
+    background-color: rgba(109, 109, 110, 0.7); /* Semi-transparent grey */
+    color: #fff;
+}
+
+.cta-button-netflix:not(.red):hover {
+    background-color: rgba(109, 109, 110, 0.4); /* More transparent on hover */
+    color: #fff; /* Ensure text stays white */
+}
+
+/* --- Main Content Area --- */
+.detail-main-content-container {
+    padding: 40px 4%; /* Padding around the main content */
+}
+
+.detail-main-content {
+    display: flex;
+    gap: 40px; /* Space between columns */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the content area */
+}
+
+.detail-left-column {
+    flex: 2; /* Takes up 2/3 of the space */
+}
+
+.detail-right-column {
+    flex: 1; /* Takes up 1/3 of the space */
+}
+
+/* --- Detail Sections (Achievements, Info, Skills) --- */
+.detail-section {
+    margin-bottom: 35px;
+}
+
+/* Achievements List */
+.detail-achievements ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.detail-achievements li {
+    margin-bottom: 15px;
+    padding-left: 1.5em; /* Indent text */
+    position: relative;
+    line-height: 1.6;
+}
+
+/* Custom bullet point (optional, Netflix often uses plain lists) */
+.detail-achievements li::before {
+    content: '•';
+    color: #E50914; /* Netflix Red bullet */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: -1px; /* Adjust vertical alignment */
+}
+
+.detail-achievements strong {
+    color: #fff; /* Make strong text stand out */
+    font-weight: 700;
+}
+
+/* Info Section */
+.detail-info p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #b3b3b3; /* Slightly lighter grey for info */
+}
+
+.detail-info strong {
+    color: #e5e5e5; /* Make labels slightly more prominent */
+    margin-right: 8px;
+    display: inline-block;
+    min-width: 80px; /* Align values */
+}
+
+/* Skills Section */
+.detail-skills p {
+    line-height: 1.8; /* More space for tags */
+}
+
+.detail-skills span {
+    display: inline-block;
+    background-color: #333; /* Dark grey background for tags */
+    color: #ccc; /* Light grey text for tags */
+    padding: 5px 12px;
+    margin: 4px 4px 4px 0;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    white-space: nowrap; /* Prevent tags from breaking */
+}
+
+/* --- Footer --- */
+.portfolio-footer {
+    text-align: center;
+    padding: 25px 4%;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #777; /* Dimmed text for footer */
+    border-top: 1px solid #222; /* Subtle top border */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .portfolio-header {
+        padding: 15px 3%;
+    }
+
+    .portfolio-nav ul {
+        gap: 15px; /* Reduce gap */
+    }
+     .portfolio-nav a {
+        font-size: 0.8rem;
+    }
+
+    .detail-hero {
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    .detail-hero-content {
+        max-width: 80%; /* Allow more width on smaller screens */
+        margin-bottom: 12%;
+    }
+
+    .detail-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-button-netflix {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+        margin-bottom: 10px; /* Stack buttons slightly */
+    }
+
+    .detail-main-content-container {
+        padding: 30px 3%;
+    }
+
+    .detail-main-content {
+        flex-direction: column; /* Stack columns */
+        gap: 30px;
+    }
+
+    .detail-left-column,
+    .detail-right-column {
+        flex: none; /* Reset flex */
+        width: 100%;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.4rem; }
+
+    .detail-achievements li {
+        padding-left: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-header {
+        flex-direction: column; /* Stack logo and nav */
+        gap: 10px;
+        padding: 10px 3%;
+    }
+    .portfolio-nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .detail-hero {
+        height: 55vh;
+        min-height: 350px;
+    }
+
+     .detail-hero-content {
+        max-width: 95%; /* Almost full width */
+        left: 3%;
+        right: 3%;
+        margin-bottom: 15%;
+     }
+
+    .detail-hero h1 {
+        font-size: 2rem;
+    }
+     .tagline {
+        font-size: 0.9rem;
+     }
+
+    .cta-button-netflix {
+        display: block; /* Make buttons full width */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .cta-button-netflix:last-of-type {
+        margin-bottom: 0;
+    }
+
+}
