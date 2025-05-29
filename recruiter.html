@@ -10,166 +10,387 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/amogh-title-logo.png">
 </head>
-<body class="portfolio-body">
-    <header class="portfolio-header">
+
+<body class="portfolio-body"> <header class="portfolio-header">
         <a href="index.html"><img src="images/index/amoghjoshi-logo.png" alt="Amogh Joshi Netflix-Logo" class="netflix-logo"></a>
         <nav class="portfolio-nav">
             <ul>
                 <li><a href="#highlights">Highlights</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="[Link-to-Your-Resume.pdf]" target="_blank">Resume</a></li>
-                <li><a href="index.html">Switch Profile</a></li>
+                <li><a href="files/Joshi, Amogh_PM.pdf" target="_blank">Resume</a></li> <li><a href="index.html">Switch Profile</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="portfolio-main">
-        <!-- Hero focused on value proposition - ADD YOUR BACKGROUND GIF PATH HERE -->
-        <section class="hero-section" style="background-image: url('images/tony-stark.gif');">
-            <div class="hero-content">
-                <h1>Amogh Joshi: Product Manager Delivering Business Impact</h1>
-                <p>Driven Product Manager with experience across B2C/B2B SaaS (EdTech, FinTech, Quantum Computing). Duke Engineering Management graduate with a B.Tech in Computer Engineering, skilled in strategy, execution, and delivering measurable results like +40% DAU & +24% Acquisition Growth.</p>
-                <a href="[Link-to-Your-Resume.pdf]" target="_blank" class="cta-button-netflix red">View Full Resume</a>
-                <a href="[your-linkedin-url]" target="_blank" class="cta-button-netflix">View LinkedIn Profile</a>
-            </div>
+        <section class="hero-section" style="background-image: url('images/tony-stark.gif');"> <div class="hero-content">
+                <h1>Amogh Joshi: Product Manager Delivering Business Impact</h1> <p>Driven Product Manager with experience across B2C/B2B SaaS (EdTech, FinTech, Quantum Computing). Duke Engineering Management graduate with a B.Tech in Computer Engineering, skilled in strategy, execution, and delivering measurable results like +40% DAU & +24% Acquisition Growth.</p> <a href="files/Joshi, Amogh_PM.pdf" target="_blank" class="cta-button-netflix red">View Full Resume</a> <a href="[your-linkedin-url]" target="_blank" class="cta-button-netflix">View LinkedIn Profile</a> </div>
         </section>
 
-        <!-- Row 1: Quantifiable Results -->
         <section id="highlights" class="content-row">
             <h2>Quantifiable Results & Highlights</h2>
-            <div class="item-grid">
-                <!-- Kurated AI DAU -->
-                <a href="experience-kurated.html">
-                    <div class="item-card">
-                        <img src="images/recruiter/highlight-dau.png" alt="DAU Growth">
+            <div class="scroll-container">
+                <button class="scroll-arrow left" aria-label="Scroll Left">&lt;</button>
+                <div class="item-grid">
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="Kurated AI"
+                         data-tagline="Driving Growth for B2C SaaS EdTech Platform"
+                         data-achievements='[
+                            "Spearheaded AI Storybank product development (vision, strategy, E2E user flow, API integration), achieving <strong>+40% DAU</strong>.",
+                            "Utilized analytics &amp; market research to develop Freemium pricing model, increasing conversion by <strong>15%</strong> and reducing CAC by <strong>10%</strong>.",
+                            "Conducted <strong>200+</strong> stakeholder interviews to identify pain points, developing a roadmap for networking product.",
+                            "Launched SEO-driven Career Stories &amp; blogs campaign, increasing website traffic by <strong>51%</strong>, CTR by <strong>22%</strong>, and conversions by <strong>18%</strong>."
+                         ]'
+                         data-details='{
+                            "role": "Product Manager",
+                            "company": "Kurated AI",
+                            "domain": "B2C SaaS Edtech",
+                            "duration": "May 2024 - Feb 2025",
+                            "location": "Durham, NC"
+                         }'
+                         data-skills="Product Strategy, Roadmapping, API Integration, User Flow Design, Data Analytics, Market Research, Freemium Pricing, A/B Testing, Stakeholder Interviews, SEO, Agile, Cross-functional Leadership"
+                         data-resume-link="[Link-to-Kurated-Segment.pdf]"
+                         data-linkedin-link="[your-linkedin-url]">
+                         <img src="images/recruiter/highlight-dau.png" alt="DAU Growth">
                         <div class="item-card-content">
                             <h3>+40% Daily Active Users</h3>
-                            <p>Spearheaded AI product development and API integration at Kurated AI, significantly increasing user engagement on the website.</p>
+                            <p>Spearheaded AI product development and API integration at Kurated AI...</p>
                         </div>
                     </div>
-                </a>
-                <!-- Kurated AI Conversion/CAC -->
-                 <div class="item-card">
-                    <img src="images/highlight-conversion.jpg" alt="Conversion Growth">
-                    <div class="item-card-content">
-                        <h3>+15% Conversion / -10% CAC</h3>
-                         <p>Developed and implemented a Freemium pricing model using analytics and market research at Kurated AI.</p>
-                    </div>
-                </div>
-                 <!-- ForOurLastNames Engagement -->
-                 <div class="item-card">
-                     <img src="images/highlight-engagement.jpg" alt="Engagement Growth">
-                    <div class="item-card-content">
-                        <h3>+36% User Engagement</h3>
-                         <p>Identified user issues via 40+ interviews and recommended gamification features for a Fintech app (ForOurLastNames).</p>
-                    </div>
-                </div>
-                 <!-- ForOurLastNames Acquisition -->
-                 <div class="item-card">
-                     <img src="images/highlight-acquisition.jpg" alt="Acquisition Growth">
-                    <div class="item-card-content">
-                        <h3>+24% Customer Acquisition</h3>
-                         <p>Authored market entry and GTM strategy based on competitor insights for ForOurLastNames (projected boost).</p>
-                    </div>
-                </div>
-                 <!-- Haiqu Scalability -->
-                 <div class="item-card">
-                     <img src="images/highlight-scalability.jpg" alt="Scalability Improvement">
-                    <div class="item-card-content">
-                        <h3>+35% System Scalability</h3>
-                         <p>Identified bottlenecks and developed custom solution for B2B SaaS Quantum Computing platform (Haiqu Inc.).</p>
-                    </div>
-                </div>
-                <!-- Benchmark Accuracy -->
-                 <div class="item-card">
-                    <img src="images/highlight-accuracy.jpg" alt="Parsing Accuracy">
-                    <div class="item-card-content">
-                        <h3>+73% Resume Parsing Accuracy</h3>
-                         <p>As SWE Intern (Benchmark), implemented custom NLP models, reducing hiring time by 30%.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Row 2: Experience Snapshot -->
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="Kurated AI"
+                         data-tagline="Optimizing Monetization for B2C SaaS EdTech"
+                         data-achievements='[
+                            "Spearheaded AI Storybank product development (vision, strategy, E2E user flow, API integration), achieving <strong>+40% DAU</strong>.",
+                            "Utilized analytics &amp; market research to develop Freemium pricing model, increasing conversion by <strong>15%</strong> and reducing CAC by <strong>10%</strong>.",
+                            "Conducted <strong>200+</strong> stakeholder interviews to identify pain points, developing a roadmap for networking product.",
+                            "Launched SEO-driven Career Stories &amp; blogs campaign, increasing website traffic by <strong>51%</strong>, CTR by <strong>22%</strong>, and conversions by <strong>18%</strong>."
+                        ]'
+                         data-details='{
+                            "role": "Product Manager",
+                            "company": "Kurated AI",
+                            "domain": "B2C SaaS Edtech",
+                            "duration": "May 2024 - Feb 2025",
+                            "location": "Durham, NC"
+                        }'
+                        data-skills="Freemium Pricing, Data Analytics, Market Research, Conversion Rate Optimization, CAC Reduction, A/B Testing, Product Strategy, Roadmapping, Agile"
+                        data-resume-link="[Link-to-Kurated-Segment.pdf]"
+                        data-linkedin-link="[your-linkedin-url]">
+                         <img src="images/recruiter/highlight-conversion.png" alt="Conversion Growth">
+                        <div class="item-card-content">
+                            <h3>+15% Conversion / -10% CAC</h3>
+                             <p>Developed and implemented a Freemium pricing model using analytics and market research at Kurated AI.</p>
+                        </div>
+                    </div>
+
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="ForOurLastNames"
+                         data-tagline="Boosting Engagement & PMF for B2C Fintech App"
+                         data-achievements='[
+                            "Identified 6 key user issues via <strong>40+ user interviews</strong>.",
+                            "Researched 14 competitors to inform strategy.",
+                            "Recommended gamification features to address engagement challenges (projected <strong>+36% lift</strong>).",
+                            "Shaped features boosting Product-Market Fit by <strong>25%</strong>.",
+                            "Authored comprehensive Go-to-Market strategy (projected <strong>+24% customer acquisition</strong>)."
+                         ]'
+                         data-details='{
+                            "role": "Product Mgmt Consultant",
+                            "company": "ForOurLastNames",
+                            "domain": "B2C Fintech",
+                            "duration": "Jan 2024 - Apr 2024",
+                            "location": "Remote/Consulting"
+                         }'
+                         data-skills="User Research, Stakeholder Interviews, Competitive Analysis, Gamification, Feature Recommendation, Product-Market Fit, Go-to-Market Strategy"
+                         data-resume-link="[Link-to-FOLN-Segment.pdf]"
+                         data-linkedin-link="[your-linkedin-url]">
+                         <img src="images/recruiter/highlight-engagement.png" alt="Engagement Growth">
+                        <div class="item-card-content">
+                            <h3>+36% User Engagement</h3>
+                             <p>Identified user issues via 40+ interviews and recommended gamification features for a Fintech app (ForOurLastNames).</p>
+                        </div>
+                    </div>
+
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="ForOurLastNames"
+                         data-tagline="Developing Market Entry Strategy for B2C Fintech"
+                         data-achievements='[
+                            "Identified 6 key user issues via <strong>40+ user interviews</strong>.",
+                            "Researched 14 competitors to inform strategy.",
+                            "Recommended gamification features to address engagement challenges (projected <strong>+36% lift</strong>).",
+                            "Shaped features boosting Product-Market Fit by <strong>25%</strong>.",
+                            "Authored comprehensive Go-to-Market strategy (projected <strong>+24% customer acquisition</strong>)."
+                         ]'
+                         data-details='{
+                            "role": "Product Mgmt Consultant",
+                            "company": "ForOurLastNames",
+                            "domain": "B2C Fintech",
+                            "duration": "Jan 2024 - Apr 2024",
+                            "location": "Remote/Consulting"
+                         }'
+                         data-skills="Go-to-Market Strategy, Competitive Analysis, Market Entry, Customer Acquisition Strategy, User Research, Product-Market Fit"
+                         data-resume-link="[Link-to-FOLN-Segment.pdf]"
+                         data-linkedin-link="[your-linkedin-url]">
+                        <img src="images/recruiter/highlight-acquisition.png" alt="Acquisition Growth">
+                        <div class="item-card-content">
+                            <h3>+24% Customer Acquisition</h3>
+                             <p>Authored market entry and GTM strategy based on competitor insights for ForOurLastNames (projected boost).</p>
+                        </div>
+                    </div>
+
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="Haiqu Inc."
+                         data-tagline="Improving Scalability for B2B Quantum Computing SaaS"
+                         data-achievements='[
+                            "Identified system bottlenecks hindering performance.",
+                            "Evaluated SaaS/PaaS/IaaS models for optimal architecture.",
+                            "Developed custom solution leading to <strong>+35% system scalability</strong>.",
+                            "Guided middleware development, reducing integration challenges by <strong>35%</strong>.",
+                            "Evaluated 11 hardware partners and analyzed 14 peer companies.",
+                            "Contributed to analysis driving <strong>30% more investor traction</strong>."
+                         ]'
+                         data-details='{
+                            "role": "Product Mgmt Consultant",
+                            "company": "Haiqu Inc.",
+                            "domain": "B2B SaaS (Quantum Computing)",
+                            "duration": "Aug 2023 - Dec 2023",
+                            "location": "Remote/Consulting"
+                         }'
+                         data-skills="Scalability Analysis, Cloud Architecture (SaaS/PaaS/IaaS), Middleware Development Guidance, Partner Evaluation, Competitive Analysis, B2B SaaS, Quantum Computing Domain Exposure"
+                         data-resume-link="[Link-to-Haiqu-Segment.pdf]"
+                         data-linkedin-link="[your-linkedin-url]">
+                        <img src="images/recruiter/highlight-scalability.png" alt="Scalability Improvement">
+                        <div class="item-card-content">
+                            <h3>+35% System Scalability</h3>
+                             <p>Identified bottlenecks and developed custom solution for B2B SaaS Quantum Computing platform (Haiqu Inc.).</p>
+                        </div>
+                    </div>
+
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="Benchmark Solutions"
+                         data-tagline="Enhancing Resume Parsing with NLP"
+                         data-achievements='[
+                            "Implemented custom NLP models (Scikit-learn, NLTK), boosting resume parsing accuracy by <strong>+73%</strong>.",
+                            "Engineered REST API for NLP model integration with HR systems, reducing data retrieval time by <strong>35%</strong>.",
+                            "Deployed Django Web/Android app improving candidate matching by <strong>+50%</strong>.",
+                            "Contributed to reducing overall hiring time by <strong>30%</strong>."
+                         ]'
+                         data-details='{
+                            "role": "Software Engineering Intern",
+                            "company": "Benchmark Solutions",
+                            "domain": "Enterprise Software (HR Tech)",
+                            "duration": "Sep 2021 - Oct 2022",
+                            "location": "Mumbai, India"
+                         }'
+                         data-skills="NLP, Python, Scikit-learn, NLTK, REST API Development, Django, Android (Basic), System Integration, Performance Optimization"
+                         data-resume-link="[Link-to-Benchmark-Segment.pdf]"
+                         data-linkedin-link="[your-linkedin-url]">
+                         <img src="images/recruiter/highlight-accuracy.png" alt="Parsing Accuracy">
+                        <div class="item-card-content">
+                            <h3>+73% Resume Parsing Accuracy</h3>
+                             <p>As SWE Intern (Benchmark), implemented custom NLP models, reducing hiring time by 30%.</p>
+                        </div>
+                    </div>
+                 </div><button class="scroll-arrow right" aria-label="Scroll Right">&gt;</button>
+            </div></section>
+
         <section id="experience" class="content-row">
             <h2>Career Journey & Roles</h2>
-             <div class="item-grid">
-                 <!-- Kurated AI -->
-                <div class="item-card">
-                    <div class="item-card-content">
-                        <h3>Product Manager @ Kurated AI (B2C EdTech)</h3>
-                        <p>(May 2024 - Current) - Leading AI product vision, strategy, E2E user flow, API integration, achieving +40% DAU.</p>
-                        <a href="[your-linkedin-url]" target="_blank">View on LinkedIn →</a>
+             <div class="scroll-container">
+                <button class="scroll-arrow left" aria-label="Scroll Left">&lt;</button>
+                <div class="item-grid">
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="Kurated AI"
+                         data-tagline="Driving Growth for B2C SaaS EdTech Platform"
+                         data-achievements='[
+                            "Spearheaded AI \"Storybank\" product development (vision, strategy, E2E user flow, API integration), achieving <strong>+40% DAU</strong>.",
+                            "Utilized analytics &amp; market research to develop Freemium pricing model, increasing conversion by <strong>15%</strong> and reducing CAC by <strong>10%</strong>.",
+                            "Conducted <strong>200+</strong> stakeholder interviews to identify pain points, developing a roadmap for networking product.",
+                            "Launched SEO-driven Career Stories &amp; blogs campaign, increasing website traffic by <strong>51%</strong>, CTR by <strong>22%</strong>, and conversions by <strong>18%</strong>."
+                        ]'
+                        data-details='{
+                            "role": "Product Manager",
+                            "company": "Kurated AI",
+                            "domain": "B2C SaaS Edtech",
+                            "duration": "May 2024 - Current",
+                            "location": "Durham, NC"
+                        }'
+                        data-skills="Product Strategy, Roadmapping, API Integration, User Flow Design, Data Analytics, Market Research, Freemium Pricing, A/B Testing, Stakeholder Interviews, SEO, Agile, Cross-functional Leadership"
+                        data-resume-link="[Link-to-Kurated-Segment.pdf]"
+                        data-linkedin-link="[your-linkedin-url]">
+                        <img src="images/recruiter/logo-kurated.png" alt="Kurated AI Logo">
+                        <div class="item-card-content">
+                            <h3>Product Manager @ Kurated AI (B2C EdTech)</h3>
+                            <p>(May 2024 - Current) - Leading AI product vision, strategy, E2E user flow, API integration, achieving +40% DAU.</p>
+                            <a href="[your-linkedin-url]" target="_blank">View on LinkedIn →</a> </div>
                     </div>
-                </div>
-                <!-- ForOurLastNames -->
-                 <div class="item-card">
-                     <div class="item-card-content">
-                         <h3>Product Mgmt Consultant @ ForOurLastNames (B2C Fintech)</h3>
-                         <p>(Jan 2024 - Apr 2024) - Conducted market/user research, shaped features boosting PMF 25%, authored GTM strategy.</p>
-                         <a href="[your-linkedin-url]" target="_blank">View on LinkedIn →</a>
-                    </div>
-                </div>
-                <!-- Haiqu -->
-                 <div class="item-card">
-                     <div class="item-card-content">
-                         <h3>Product Mgmt Consultant @ Haiqu Inc. (B2B Quantum)</h3>
-                         <p>(Aug 2023 - Dec 2023) - Boosted scalability 35%, guided middleware dev (-35% integration challenges), drove investor traction.</p>
-                         <a href="[your-linkedin-url]" target="_blank">View on LinkedIn →</a>
-                    </div>
-                </div>
-                <!-- Benchmark -->
-                 <div class="item-card">
-                     <div class="item-card-content">
-                         <h3>Software Eng. Intern @ Benchmark Solutions (Enterprise)</h3>
-                         <p>(Sep 2021 - Oct 2022) - Boosted parsing accuracy 73% (NLP), built REST API, deployed Django app (+50% matching).</p>
-                         <a href="[your-linkedin-url]" target="_blank">View on LinkedIn →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Row 3: Core Skillset -->
-         <section id="skills" class="content-row">
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="ForOurLastNames"
+                         data-tagline="Boosting Engagement & PMF for B2C Fintech App"
+                         data-achievements='[
+                            "Identified 6 key user issues via <strong>40+ user interviews</strong>.",
+                            "Researched 14 competitors to inform strategy.",
+                            "Recommended gamification features to address engagement challenges (projected <strong>+36% lift</strong>).",
+                            "Shaped features boosting Product-Market Fit by <strong>25%</strong>.",
+                            "Authored comprehensive Go-to-Market strategy (projected <strong>+24% customer acquisition</strong>)."
+                         ]'
+                         data-details='{
+                            "role": "Product Mgmt Consultant",
+                            "company": "ForOurLastNames",
+                            "domain": "B2C Fintech",
+                            "duration": "Jan 2024 - Apr 2024",
+                            "location": "Remote/Consulting"
+                         }'
+                         data-skills="User Research, Stakeholder Interviews, Competitive Analysis, Gamification, Feature Recommendation, Product-Market Fit, Go-to-Market Strategy"
+                         data-resume-link="[Link-to-FOLN-Segment.pdf]"
+                         data-linkedin-link="[your-linkedin-url]">
+                        <img src="images/recruiter/logo-foln.png" alt="ForOurLastNames Logo">
+                         <div class="item-card-content">
+                             <h3>Product Mgmt Consultant @ ForOurLastNames (B2C Fintech)</h3>
+                             <p>(Jan 2024 - Apr 2024) - Conducted market/user research, shaped features boosting PMF 25%, authored GTM strategy.</p>
+                             <a href="[your-linkedin-url]" target="_blank">View on LinkedIn →</a> </div>
+                    </div>
+
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="Haiqu Inc."
+                         data-tagline="Improving Scalability for B2B Quantum Computing SaaS"
+                         data-achievements='[
+                            "Identified system bottlenecks hindering performance.",
+                            "Evaluated SaaS/PaaS/IaaS models for optimal architecture.",
+                            "Developed custom solution leading to <strong>+35% system scalability</strong>.",
+                            "Guided middleware development, reducing integration challenges by <strong>35%</strong>.",
+                            "Evaluated 11 hardware partners and analyzed 14 peer companies.",
+                            "Contributed to analysis driving <strong>30% more investor traction</strong>."
+                         ]'
+                         data-details='{
+                            "role": "Product Mgmt Consultant",
+                            "company": "Haiqu Inc.",
+                            "domain": "B2B SaaS (Quantum Computing)",
+                            "duration": "Aug 2023 - Dec 2023",
+                            "location": "Remote/Consulting"
+                         }'
+                         data-skills="Scalability Analysis, Cloud Architecture (SaaS/PaaS/IaaS), Middleware Development Guidance, Partner Evaluation, Competitive Analysis, B2B SaaS, Quantum Computing Domain Exposure"
+                         data-resume-link="[Link-to-Haiqu-Segment.pdf]"
+                         data-linkedin-link="[your-linkedin-url]">
+                        <img src="images/recruiter/logo-haiqu.png" alt="Haiqu Inc Logo">
+                         <div class="item-card-content">
+                             <h3>Product Mgmt Consultant @ Haiqu Inc. (B2B Quantum)</h3>
+                             <p>(Aug 2023 - Dec 2023) - Boosted scalability 35%, guided middleware dev (-35% integration challenges), drove investor traction.</p>
+                             <a href="[your-linkedin-url]" target="_blank">View on LinkedIn →</a> </div>
+                    </div>
+
+                    <div class="item-card"
+                         data-modal-trigger
+                         data-title="Benchmark Solutions"
+                         data-tagline="Enhancing Resume Parsing with NLP"
+                         data-achievements='[
+                            "Implemented custom NLP models (Scikit-learn, NLTK), boosting resume parsing accuracy by <strong>+73%</strong>.",
+                            "Engineered REST API for NLP model integration with HR systems, reducing data retrieval time by <strong>35%</strong>.",
+                            "Deployed Django Web/Android app improving candidate matching by <strong>+50%</strong>.",
+                            "Contributed to reducing overall hiring time by <strong>30%</strong>."
+                         ]'
+                         data-details='{
+                            "role": "Software Engineering Intern",
+                            "company": "Benchmark Solutions",
+                            "domain": "Enterprise Software (HR Tech)",
+                            "duration": "Sep 2021 - Oct 2022",
+                            "location": "Mumbai, India"
+                         }'
+                         data-skills="NLP, Python, Scikit-learn, NLTK, REST API Development, Django, Android (Basic), System Integration, Performance Optimization"
+                         data-resume-link="[Link-to-Benchmark-Segment.pdf]"
+                         data-linkedin-link="[your-linkedin-url]">
+                        <img src="images/recruiter/logo-benchmark.png" alt="Benchmark Solutions Logo">
+                         <div class="item-card-content">
+                             <h3>Software Eng. Intern @ Benchmark Solutions (Enterprise)</h3>
+                             <p>(Sep 2021 - Oct 2022) - Boosted parsing accuracy 73% (NLP), built REST API, deployed Django app (+50% matching).</p>
+                             <a href="[your-linkedin-url]" target="_blank">View on LinkedIn →</a> </div>
+                    </div>
+                </div><button class="scroll-arrow right" aria-label="Scroll Right">&gt;</button>
+            </div></section>
+
+        <section id="skills" class="content-row">
             <h2>Core Competencies</h2>
-            <div class="item-grid">
-                 <div class="item-card skill-card">
-                    <div class="item-card-content"><h3>Product Management</h3><p>Agile, Roadmap, GTM Strategy, A/B Testing, Market Research, User Stories, UI/UX Principles.</p></div>
-                </div>
-                 <div class="item-card skill-card">
-                    <div class="item-card-content"><h3>Business & Data</h3><p>Business Analytics, Data Visualization, SQL Proficiency, Statistical Analysis, Process Management.</p></div>
-                </div>
-                <div class="item-card skill-card">
-                    <div class="item-card-content"><h3>Technical Skills</h3><p>API Integration, AWS, Jira, Confluence, Google Suite, MS Office, Adobe Creative Suite.</p></div>
-                </div>
-                <div class="item-card skill-card">
-                    <div class="item-card-content"><h3>Programming (Familiarity)</h3><p>Python, SQL, Java, JavaScript, C++, HTML. (Strong foundation from B.Tech)</p></div>
-                </div>
-                 <div class="item-card skill-card">
-                    <div class="item-card-content"><h3>Education</h3><p>Master of Eng. Management (Duke), B.Tech Computer Engineering (Mumbai).</p></div>
-                </div>
-            </div>
-        </section>
+            <div class="scroll-container">
+                <button class="scroll-arrow left" aria-label="Scroll Left">&lt;</button>
+                <div class="item-grid">
+                    <div class="item-card skill-card">
+                        <div class="item-card-content"><h3>Product Management</h3><p>Agile, Roadmap, GTM Strategy, A/B Testing, Market Research, User Stories, UI/UX Principles.</p></div>
+                    </div>
+                    <div class="item-card skill-card">
+                        <div class="item-card-content"><h3>Business & Data</h3><p>Business Analytics, Data Visualization, SQL Proficiency, Statistical Analysis, Process Management.</p></div>
+                    </div>
+                    <div class="item-card skill-card">
+                        <div class="item-card-content"><h3>Technical Skills</h3><p>API Integration, AWS, Jira, Confluence, Google Suite, MS Office, Adobe Creative Suite.</p></div>
+                    </div>
+                    <div class="item-card skill-card">
+                        <div class="item-card-content"><h3>Programming (Familiarity)</h3><p>Python, SQL, Java, JavaScript, C++, HTML. (Strong foundation from B.Tech)</p></div>
+                    </div>
+                    <div class="item-card skill-card">
+                        <div class="item-card-content"><h3>Education</h3><p>Master of Eng. Management (Duke), B.Tech Computer Engineering (Mumbai).</p></div>
+                    </div>
+                </div><button class="scroll-arrow right" aria-label="Scroll Right">&gt;</button>
+            </div></section>
 
-        <!-- Contact Section -->
         <section id="contact" style="padding: 40px 0; text-align: center;">
             <h2>Connect Further</h2>
             <p>Ready to discuss how I can contribute to your team?</p>
             <p style="margin-top: 20px;">
-                <a href="mailto:[your-email@example.com]" class="cta-button-netflix">Email Me</a>
-                <a href="[your-linkedin-url]" target="_blank" class="cta-button-netflix">LinkedIn Profile</a>
-            </p>
+                <a href="mailto:[your-email@example.com]" class="cta-button-netflix">Email Me</a> <a href="[your-linkedin-url]" target="_blank" class="cta-button-netflix">LinkedIn Profile</a> </p>
         </section>
-
     </main>
 
+    <div id="experienceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <h1 id="modalTitle"></h1>
+                <p id="modalTagline" class="tagline"></p>
+                <div class="modal-columns">
+                    <div class="modal-left-column">
+                         <section class="detail-section detail-achievements">
+                            <h2 id="modalAchievementsHeader">Key Achievements & Impact</h2>
+                            <ul id="modalAchievementsList"></ul>
+                        </section>
+                    </div>
+                    <div class="modal-right-column">
+                         <section class="detail-section detail-info">
+                            <h2>Details</h2>
+                            <p><strong>Role:</strong> <span id="modalRole"></span></p>
+                            <p><strong>Company:</strong> <span id="modalCompany"></span></p>
+                            <p><strong>Domain:</strong> <span id="modalDomain"></span></p>
+                            <p><strong>Duration:</strong> <span id="modalDuration"></span></p>
+                            <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+                         </section>
+                        <section class="detail-section detail-skills">
+                            <h2>Skills Demonstrated</h2>
+                            <p id="modalSkillsContainer"></p>
+                        </section>
+                        <div class="modal-links">
+                             <a href="#" id="modalResumeLink" target="_blank" class="cta-button-netflix red">View Resume Segment</a>
+                             <a href="#" id="modalLinkedInLink" target="_blank" class="cta-button-netflix">Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="portfolio-footer">
         © 2024 Amogh Joshi | Product Management Highlights
     </footer>
 
     <script>
+        // --- HERO BACKGROUND SCRIPT --- (Kept exactly as provided)
         document.addEventListener("DOMContentLoaded", function() {
           const bgImages = [
             "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTlvMDJyY2F4djFqemwwcHAwdXRnN3JuZDZlNXZwbDlia3pnOWoxdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xpX7EFdRVczD9avaHo/giphy.gif", // Dude Exponential Growth
@@ -180,31 +401,203 @@
             "https://media.giphy.com/media/Q5Fp8DviZhYDrEZw5H/giphy.gif?cid=790b76113spurcbp0h06funfzsj3ay2xixn9g35a1jk4rlax&ep=v1_gifs_search&rid=giphy.gif&ct=g" //Here's my Resume
           ];
 
-          // Randomly select an image URL from the array
-          const randomImage = bgImages[Math.floor(Math.random() * bgImages.length)];
-
-          // Apply the selected image as the background image of the hero section
           const heroSection = document.querySelector('.hero-section');
           if (heroSection) {
+            const randomImage = bgImages[Math.floor(Math.random() * bgImages.length)];
             heroSection.style.backgroundImage = `url('${randomImage}')`;
           }
         });
 
+        // --- ORIGINAL HEADER SCROLL SCRIPT --- (Kept exactly as provided)
         function checkScroll() {
             const header = document.querySelector('.portfolio-header');
-            if (window.scrollY > 5) { // adjust threshold as needed
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
+            if (header) {
+                if (window.scrollY > 5) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
             }
         }
-        // Check on scroll
         window.addEventListener('scroll', checkScroll);
-        // Also check when the page loads (in case it's not at the top)
         window.addEventListener('load', checkScroll);
+
+
+       // --- MODAL SCRIPT --- (Keep as before)
+       document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('experienceModal');
+            if (!modal) return;
+
+            const closeModalButton = modal.querySelector('.close-button');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalTagline = document.getElementById('modalTagline');
+            const modalAchievementsList = document.getElementById('modalAchievementsList');
+            const modalRole = document.getElementById('modalRole');
+            const modalCompany = document.getElementById('modalCompany');
+            const modalDomain = document.getElementById('modalDomain');
+            const modalDuration = document.getElementById('modalDuration');
+            const modalLocation = document.getElementById('modalLocation');
+            const modalSkillsContainer = document.getElementById('modalSkillsContainer');
+            const modalResumeLink = document.getElementById('modalResumeLink');
+            const modalLinkedInLink = document.getElementById('modalLinkedInLink');
+            const body = document.body;
+
+             if (!closeModalButton || !modalTitle || !modalTagline || !modalAchievementsList || !modalRole || !modalCompany || !modalDomain || !modalDuration || !modalLocation || !modalSkillsContainer || !modalResumeLink || !modalLinkedInLink) {
+                 console.error("One or more essential modal elements are missing!");
+                 return;
+             }
+
+            const triggerCards = document.querySelectorAll('.item-card[data-modal-trigger]');
+
+            triggerCards.forEach(card => {
+                card.addEventListener('click', (event) => {
+                    if (event.target.closest('a') && event.target.closest('a').href !== '#') {
+                        return;
+                    }
+                     event.preventDefault();
+
+                    const title = card.dataset.title || 'Details';
+                    const tagline = card.dataset.tagline || '';
+                    let achievements = [];
+                    // ** DEBUGGING POINT ** Add console log before parsing
+                    // console.log("Attempting to parse achievements:", card.dataset.achievements);
+                    try {
+                       // Ensure JSON is valid before parsing
+                       // Basic check: Does it start with '[' and end with ']'?
+                       const achievementData = (card.dataset.achievements || '[]').trim();
+                       if (achievementData.startsWith('[') && achievementData.endsWith(']')) {
+                           achievements = JSON.parse(achievementData);
+                       } else {
+                           console.error("Invalid achievements data format (missing brackets):", achievementData);
+                           achievements = []; // Default to empty if format is wrong
+                       }
+                    } catch (e) {
+                        console.error("Error parsing achievements JSON:", card.dataset.achievements, e);
+                        // Provide feedback or default value if parsing fails
+                        achievements = ["Error loading achievements."];
+                    }
+
+                    let details = {};
+                     try {
+                       const detailData = (card.dataset.details || '{}').trim();
+                        if (detailData.startsWith('{') && detailData.endsWith('}')) {
+                            details = JSON.parse(detailData);
+                        } else {
+                             console.error("Invalid details data format (missing braces):", detailData);
+                            details = {};
+                        }
+                    } catch (e) {
+                        console.error("Error parsing details JSON:", card.dataset.details, e);
+                        details = {error: "Could not load details."};
+                    }
+
+                    const skills = (card.dataset.skills || '').split(',').map(s => s.trim()).filter(s => s);
+                    const resumeLink = card.dataset.resumeLink || '#';
+                    const linkedinLink = card.dataset.linkedinLink || '#';
+
+                    // Populate Modal (rest of the population logic remains the same)
+                    modalTitle.textContent = title;
+                    modalTagline.textContent = tagline;
+                    modalAchievementsList.innerHTML = '';
+                    const achievementsSection = modalAchievementsList.closest('.detail-section');
+                    if (achievements.length > 0) {
+                       achievements.forEach(ach => {
+                           const li = document.createElement('li');
+                           li.innerHTML = ach; // Use innerHTML for <strong> tags
+                           modalAchievementsList.appendChild(li);
+                        });
+                       if(achievementsSection) achievementsSection.style.display = 'block';
+                    } else {
+                         if(achievementsSection) achievementsSection.style.display = 'none';
+                    }
+                    modalRole.textContent = details.role || 'N/A';
+                    modalCompany.textContent = details.company || 'N/A';
+                    modalDomain.textContent = details.domain || 'N/A';
+                    modalDuration.textContent = details.duration || 'N/A';
+                    modalLocation.textContent = details.location || 'N/A';
+                    modalSkillsContainer.innerHTML = '';
+                    const skillsSection = modalSkillsContainer.closest('.detail-section');
+                    if (skills.length > 0) {
+                       skills.forEach(skill => {
+                            const span = document.createElement('span');
+                            span.textContent = skill;
+                            modalSkillsContainer.appendChild(span);
+                            modalSkillsContainer.appendChild(document.createTextNode(' '));
+                        });
+                        if(skillsSection) skillsSection.style.display = 'block';
+                     } else {
+                         if(skillsSection) skillsSection.style.display = 'none';
+                    }
+                    modalResumeLink.href = resumeLink;
+                    modalResumeLink.style.display = (resumeLink === '#') ? 'none' : 'inline-block';
+                    modalLinkedInLink.href = linkedinLink;
+                    modalLinkedInLink.style.display = (linkedinLink === '#') ? 'none' : 'inline-block';
+
+                    // Show Modal
+                    modal.style.display = 'block';
+                    body.classList.add('modal-open');
+                });
+            });
+
+            // Close Modal Logic
+            const closeModal = () => {
+                modal.style.display = 'none';
+                body.classList.remove('modal-open');
+            };
+            closeModalButton.addEventListener('click', closeModal);
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.style.display === 'block') {
+                    closeModal();
+                }
+            });
+       }); // End DOMContentLoaded for Modal
+
+       // --- CAROUSEL SCRIPT --- (Keep as before)
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollContainers = document.querySelectorAll('.scroll-container');
+            scrollContainers.forEach(container => {
+                const grid = container.querySelector('.item-grid');
+                const leftArrow = container.querySelector('.scroll-arrow.left');
+                const rightArrow = container.querySelector('.scroll-arrow.right');
+                if (!grid || !leftArrow || !rightArrow) return;
+                const updateArrowVisibility = () => {
+                     // Only run arrow logic if arrows are potentially visible (check CSS media query implicitly)
+                    if (window.innerWidth < 769) { // Match the CSS breakpoint
+                        leftArrow.style.display = 'none';
+                        rightArrow.style.display = 'none';
+                        return; // Exit if on mobile view
+                    }
+                    const scrollLeft = grid.scrollLeft;
+                    const scrollWidth = grid.scrollWidth;
+                    const clientWidth = grid.clientWidth;
+                    leftArrow.style.display = scrollLeft > 10 ? 'flex' : 'none';
+                    rightArrow.style.display = scrollWidth - scrollLeft - clientWidth > 10 ? 'flex' : 'none';
+                };
+                leftArrow.addEventListener('click', () => {
+                    const scrollAmount = grid.clientWidth * 0.7;
+                    grid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                });
+                rightArrow.addEventListener('click', () => {
+                    const scrollAmount = grid.clientWidth * 0.7;
+                    grid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                });
+                let scrollTimeout;
+                grid.addEventListener('scroll', () => {
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(updateArrowVisibility, 150);
+                });
+                const resizeObserver = new ResizeObserver(() => { updateArrowVisibility(); });
+                resizeObserver.observe(grid);
+                setTimeout(updateArrowVisibility, 100); // Initial check
+            });
+        }); // End DOMContentLoaded for Carousel
+
     </script>
-
-
 
 </body>
 </html>
